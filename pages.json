@@ -1,0 +1,89 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/details/details",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/strategy/strategy",
+			"style": {
+				"onReachBottomDistance": 0,
+				"navigationBarTitleText": "攻略"
+			}
+		},
+		{
+			"path" : "pages/upload/upload",
+			"style": {
+				"navigationBarTitleText": "发表游记"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "选择城市"
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+	    {
+            "path": "pages/the-search/theSearch",
+            "style" : {
+				"navigationBarTitleText": "搜索发现"
+			}
+        },
+		{
+		    "path": "pages/bannerDetails/bannerDetails",
+		    "style" : {
+				"navigationBarTitleText": "详情"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"onReachBottomDistance": 0,
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#4CD964",
+		"backgroundColor": "#4CD964"
+	},
+	"tabBar": {
+		"color": "#C8C7CC",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab/home.png",
+				"selectedIconPath": "static/tab/home-sel.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/strategy/strategy",
+				"iconPath": "static/tab/strategy.png",
+				"selectedIconPath": "static/tab/strategy-sel.png",
+				"text": "攻略"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"iconPath": "static/tab/me.png",
+				"selectedIconPath": "static/tab/me-sel.png",
+				"text": "我"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将被用于小程序位置接口的效果展示"
+		}
+	}
+}
